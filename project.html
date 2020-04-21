@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>CAREER GUIDANCE</title>
+		<div style="background: #baa;">
+		<b><h1><marquee>WELCOME TO CAREER GUIDANCE </marquee></b></h1> 
+        </div>
+
+
+
+
+	</style>
+	
+
+</head>
+<body style="background: url(p2.jpg); background-size:100% 100% ; background-attachment: fixed;" onload="document.form1.text1.focus()">
+ <form  name="r" method="post" action="check.php"> 
+ 	<div>
+
+ 	<h1>REGISTER</h1>
+ 	<p><h2>please fill the below form to create an account</p></h2>
+
+ 
+  <label for="Email"><b>EMAIL</b>
+ </label>
+ <input type="email" name="email" required><br><br><br>
+ 
+ <b>Password</b><input type="password" name="pas" id="a" required placeholder="Enter Password"><br><br><br>
+<b>Re-enter password</b><input type="password" name="pwdRe" placeholder="Re-enter password" required id="b"><br><br>
+
+<input type="checkbox" onclick="vaa()" id="pa">show password
+<button type="submit" onclick="val()">REGISTER</button>
+</div>
+<P>Already have an account?<a href="p2.html">Sign In</a></P>
+</form>
+<script type="text/javascript">
+	function val(inputText)
+	{
+		var a=document.r.pas.value;
+		var b=document.r.pwdRe.value;
+
+	if(a!=b)
+		alert("password does not match...try again")
+	if(a.length<6)
+		alert("password is too short")
+	
+    }
+
+    function vaa()
+    {
+         var a = document.getElementById("a");
+    if (a.type === "password") {
+       a.type = "text";
+    }
+    else {
+    a.type = "password";
+  }
+}
+
+
+
+</script>
+
+
+
+</body>
+</html>

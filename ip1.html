@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style type="text/css">
+        h2 {
+            background-color: #17DBA0;
+        }
+    </style>
+
+
+    <meta charset="ISO-8859-1">
+    <title>Login</title>
+</head>
+
+<body style="background: url(ic.jpg);">
+
+    <script type="text/javascript">
+        
+        function page() {
+            var a = document.Login.uname.value;
+            var b = document.Login.password.value;
+
+            if (document.getElementById('a').value == '' || document.getElementById('b').value == '' || document.getElementById('b').length < 8) {
+                alert("ERROR...")
+            }
+            else
+                window.open("kp.html")
+        }
+
+
+
+    </script>
+
+
+
+
+    &nbsp &nbsp<img src="C:\Users\ADMIN\eclipse-workspace\logo1.png" alt="CHS" width="120" height="100" align="middle">
+    <a style="color:#17DBA0">
+        <font size="6"><b> &nbsp &nbsp COMPUTER HARDWARE STORE </font>
+    </a></b><br><br>
+    <h2>
+        <marquee style="color:black"> Welcome to COMPUTER HARDWARE STORE LOGIN PAGE!..</style>
+        </marquee>
+    </h2>
+    <form color:#000080 name="Login" method="post" >
+        <br>
+        <br>
+
+        <b><a style="color: #17DBA0">
+                <font size="4">Please Enter your details..
+            </a> </b></font>
+        <br>
+        <br>
+        <b><a style="color: #17DBA0">
+                <font size="4"> Username: &nbsp
+            </a></b></font>
+        <input type="email" name="uname" id="a" required="">
+        <br>
+        <br>
+        <b><a style="color: #17DBA0">
+                <font size="4">Password: &nbsp
+            </a></b></font>
+        <input type="password" name="password" id="b" required="" minlength="8">
+        <br>
+        <br>
+        <button type="submit" onclick="newuser()" align="justify">
+            <font size="4">Login
+        </button> </font>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        <font size="4"><input type="reset" value="Clear" Clear> </font> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        <br><br>
+        <b><a style="color: #17DBA0">
+                <font size="4">Sign UP! &nbsp </b></font>
+        <button type="button"  align="justify">
+            <font size="4"> Enter
+        </button></a></font>
+        <br>
+
+
+
+
+        <p align="center"> <br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+            <b><a style="color: #17DBA0">&copy COMPUTER HARDWARE STORE PVT. LIMITED </a></b>
+        </p>
+
+
+
+
+    </form>
+<script>
+function newuser() {
+            window.open("connect.php")
+
+        }
+
+
+</script>
+
+
+</body>
+
+</html>
